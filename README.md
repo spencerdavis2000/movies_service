@@ -27,16 +27,6 @@ npm install
 
 ```
 
-Set up the .env
-
-```
-DB_USER=your_database_user
-DB_PASSWORD=your_database_password
-DB_SERVER=your_database_server_name.database.windows.net
-DB_DATABASE=Movies
-DB_PORT=1433
-```
-
 ## Run the applicaiton
 
 ```
@@ -61,7 +51,30 @@ JSON BODY
     "title": "The Godfather"
   }
 }
-or no title to get all
+```
+
+## We get the following
+
+```
+{
+	"currentPage": 1,
+	"pageSize": 3,
+	"films": [
+		{
+			"title": "The Godfather",
+			"releaseYear": 1972,
+			"numberOfCopiesAvailable": 7,
+			"director": "Francis Ford Coppola",
+			"distributor": "Paramount Pictures"
+		}
+	]
+}
+```
+
+## Or no title to get everything
+
+```
+
 {
   "currentPage": 1,
   "pageSize": 3,
